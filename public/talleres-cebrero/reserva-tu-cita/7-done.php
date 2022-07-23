@@ -15,7 +15,7 @@
            $_SESSION['vehicle'] . ';' .
            $_SESSION['what'] . ';' .
            $_SESSION['phone'] . "\n";
-   $file = '/var/www/lab.onedevs.tech/talleres-cebrero/files/citas.txt';
+   $file = '/var/www/lab.onedevs.tech/files/citas.txt';
    \file_put_contents($file, $line, \FILE_APPEND | \LOCK_EX);
 
    $css_version = \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9);
