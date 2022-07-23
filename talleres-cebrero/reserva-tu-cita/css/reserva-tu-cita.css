@@ -1,0 +1,459 @@
+body {
+   background-color: black;
+   color: yellow;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+table.layout {
+   background-image: url("../images/fondo.png");
+   background-position: center center;
+   width: 300px;
+   height: 90vh;
+   margin: 0 auto;
+   border-right: dashed 15px yellow;
+   border-left: dashed 15px yellow;
+}
+
+.layout .margin {
+   height: 33%;
+}
+
+div {
+   text-align: center;
+   color: yellow;
+   display: block;
+}
+
+span.talleres {
+   font-family: sans-serif;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 40px;
+}
+
+span.cebrero {
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 50px;
+}
+
+table.calendar {
+   width: 260px;
+   margin: 0 auto;
+}
+
+.calendar .month {
+   background-color: #16a085;
+   font-weight: bold;
+   padding: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.calendar .weekday {
+   background-color: #16a085;
+   font-weight: bold;
+   padding: 5px;
+   border-bottom: solid 1px #16a085;
+}
+
+.calendar .weekenddayname {
+   background-color: #068065;
+   font-weight: bold;
+   padding: 5px;
+   color: black;
+   border-bottom: solid 1px black;
+}
+
+.calendar .saturday {
+   border-left: solid 1px black;
+}
+
+.calendar .weekendday {
+   background-color: #068065;
+   font-weight: bold;
+   padding: 5px;
+   color: black;
+   font-size: 14px;
+}
+
+.calendar td.activeday {
+   font-weight: bold;
+   padding: 5px;
+   font-size: 14px;
+   background-color: #068065;
+}
+
+.calendar div.activeday {
+   background-color: white;
+   border-radius: 10px;
+}
+
+.calendar td.activeday a {
+   color: black;
+   text-decoration: none;
+}
+
+.calendar .vacations {
+   background-color: #068065;
+   font-weight: bold;
+   padding: 5px;
+   color: black;
+   font-size: 14px;
+}
+
+.calendar .pastday {
+   background-color: #068065;
+   font-weight: bold;
+   padding: 5px;
+   color: black;
+   font-size: 14px;
+}
+
+.instructions {
+   color: white;
+   margin: 20px;
+}
+
+.calendar .input {
+   width: 250px;
+   height: 20px;
+   font-size: 14px;
+   border: none;
+   border-bottom: dashed 1px white;
+   padding: 4px;
+   margin: 10px auto;
+   background-color: #068065;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+}
+
+.calendar .input::placeholder {
+  color: white;
+}
+
+.calendar .input:-ms-input-placeholder {
+  color: white;
+}
+
+.calendar .input::-ms-input-placeholder {
+  color: white;
+}
+
+.calendar textarea.input {
+   height: auto;
+}
+
+.calendar .input-cebrero {
+   background-color: yellow;
+   color: black;
+}
+
+.calendar .input-cebrero::placeholder {
+  color: black;
+}
+
+.calendar .input-cebrero:-ms-input-placeholder {
+  color: black;
+}
+
+.calendar .input-cebrero::-ms-input-placeholder {
+  color: black;
+}
+
+.meeting {
+   font-size: 14px;
+}
+
+.btn-assign {
+   background-color: yellow;
+   margin: 20px auto 20px auto;
+   padding: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   color: black;
+   border-radius: 30px;
+   border: none;
+   font-weight: bold;
+   width: 150px;
+   cursor: pointer;
+}
+
+.done {
+   color: white;
+   font-weight: bold;
+   margin: 20px;
+}
+
+.here {
+   color: yellow;
+   text-decoration: underline;
+}
+
+
+.btn-grad {
+   align-items: center;
+   background: linear-gradient(90deg, #f4d03f 0%, #16a085 100%);
+   border-radius: 50%;
+   color: white;
+   cursor: pointer;
+   display: flex;
+   font-weight: bold;
+   font-size: 16px;
+   height: 120px;
+   justify-content: center;
+   margin: 0 auto;
+   text-transform: uppercase;
+   transition: 0.7s;
+   width: 120px;
+
+   -webkit-animation: btnTalleresCebrero 2s ease infinite;
+   -moz-animation: btnTalleresCebrero 2s ease infinite;
+   animation: btnTalleresCebrero 2s ease infinite;
+}
+
+@-webkit-keyframes btnTalleresCebrero {
+   0% {background: linear-gradient(90deg, #f4d03f 0%, #16a085 100%)}
+   1.39% {background: linear-gradient(95deg, #f4d03f 0%, #16a085 100%)}
+   2.78% {background: linear-gradient(100deg, #f4d03f 0%, #16a085 100%)}
+   4.17% {background: linear-gradient(105deg, #f4d03f 0%, #16a085 100%)}
+   5.56% {background: linear-gradient(110deg, #f4d03f 0%, #16a085 100%)}
+   6.94% {background: linear-gradient(115deg, #f4d03f 0%, #16a085 100%)}
+   8.33% {background: linear-gradient(120deg, #f4d03f 0%, #16a085 100%)}
+   9.72% {background: linear-gradient(125deg, #f4d03f 0%, #16a085 100%)}
+   11.11% {background: linear-gradient(130deg, #f4d03f 0%, #16a085 100%)}
+   12.5% {background: linear-gradient(135deg, #f4d03f 0%, #16a085 100%)}
+   13.89% {background: linear-gradient(140deg, #f4d03f 0%, #16a085 100%)}
+   15.28% {background: linear-gradient(145deg, #f4d03f 0%, #16a085 100%)}
+   16.67% {background: linear-gradient(150deg, #f4d03f 0%, #16a085 100%)}
+   18.06% {background: linear-gradient(155deg, #f4d03f 0%, #16a085 100%)}
+   19.44% {background: linear-gradient(160deg, #f4d03f 0%, #16a085 100%)}
+   20.83% {background: linear-gradient(165deg, #f4d03f 0%, #16a085 100%)}
+   22.22% {background: linear-gradient(170deg, #f4d03f 0%, #16a085 100%)}
+   23.61% {background: linear-gradient(175deg, #f4d03f 0%, #16a085 100%)}
+   25% {background: linear-gradient(180deg, #f4d03f 0%, #16a085 100%)}
+   26.39% {background: linear-gradient(185deg, #f4d03f 0%, #16a085 100%)}
+   27.78% {background: linear-gradient(190deg, #f4d03f 0%, #16a085 100%)}
+   29.17% {background: linear-gradient(195deg, #f4d03f 0%, #16a085 100%)}
+   30.56% {background: linear-gradient(200deg, #f4d03f 0%, #16a085 100%)}
+   31.94% {background: linear-gradient(205deg, #f4d03f 0%, #16a085 100%)}
+   33.33% {background: linear-gradient(210deg, #f4d03f 0%, #16a085 100%)}
+   34.72% {background: linear-gradient(215deg, #f4d03f 0%, #16a085 100%)}
+   36.11% {background: linear-gradient(220deg, #f4d03f 0%, #16a085 100%)}
+   37.5% {background: linear-gradient(225deg, #f4d03f 0%, #16a085 100%)}
+   38.89% {background: linear-gradient(230deg, #f4d03f 0%, #16a085 100%)}
+   40.28% {background: linear-gradient(235deg, #f4d03f 0%, #16a085 100%)}
+   41.67% {background: linear-gradient(240deg, #f4d03f 0%, #16a085 100%)}
+   43.06% {background: linear-gradient(245deg, #f4d03f 0%, #16a085 100%)}
+   44.44% {background: linear-gradient(250deg, #f4d03f 0%, #16a085 100%)}
+   45.83% {background: linear-gradient(255deg, #f4d03f 0%, #16a085 100%)}
+   47.22% {background: linear-gradient(260deg, #f4d03f 0%, #16a085 100%)}
+   48.61% {background: linear-gradient(265deg, #f4d03f 0%, #16a085 100%)}
+   50% {background: linear-gradient(270deg, #f4d03f 0%, #16a085 100%)}
+   51.39% {background: linear-gradient(275deg, #f4d03f 0%, #16a085 100%)}
+   52.78% {background: linear-gradient(280deg, #f4d03f 0%, #16a085 100%)}
+   54.17% {background: linear-gradient(285deg, #f4d03f 0%, #16a085 100%)}
+   55.56% {background: linear-gradient(290deg, #f4d03f 0%, #16a085 100%)}
+   56.94% {background: linear-gradient(295deg, #f4d03f 0%, #16a085 100%)}
+   58.33% {background: linear-gradient(300deg, #f4d03f 0%, #16a085 100%)}
+   59.72% {background: linear-gradient(305deg, #f4d03f 0%, #16a085 100%)}
+   61.11% {background: linear-gradient(310deg, #f4d03f 0%, #16a085 100%)}
+   62.5% {background: linear-gradient(315deg, #f4d03f 0%, #16a085 100%)}
+   63.89% {background: linear-gradient(320deg, #f4d03f 0%, #16a085 100%)}
+   65.28% {background: linear-gradient(325deg, #f4d03f 0%, #16a085 100%)}
+   66.67% {background: linear-gradient(330deg, #f4d03f 0%, #16a085 100%)}
+   68.06% {background: linear-gradient(335deg, #f4d03f 0%, #16a085 100%)}
+   69.44% {background: linear-gradient(340deg, #f4d03f 0%, #16a085 100%)}
+   70.83% {background: linear-gradient(345deg, #f4d03f 0%, #16a085 100%)}
+   72.22% {background: linear-gradient(350deg, #f4d03f 0%, #16a085 100%)}
+   73.61% {background: linear-gradient(355deg, #f4d03f 0%, #16a085 100%)}
+   75% {background: linear-gradient(360deg, #f4d03f 0%, #16a085 100%)}
+   76.39% {background: linear-gradient(365deg, #f4d03f 0%, #16a085 100%)}
+   77.78% {background: linear-gradient(370deg, #f4d03f 0%, #16a085 100%)}
+   79.17% {background: linear-gradient(375deg, #f4d03f 0%, #16a085 100%)}
+   80.56% {background: linear-gradient(380deg, #f4d03f 0%, #16a085 100%)}
+   81.94% {background: linear-gradient(385deg, #f4d03f 0%, #16a085 100%)}
+   83.33% {background: linear-gradient(390deg, #f4d03f 0%, #16a085 100%)}
+   84.72% {background: linear-gradient(395deg, #f4d03f 0%, #16a085 100%)}
+   86.11% {background: linear-gradient(400deg, #f4d03f 0%, #16a085 100%)}
+   87.5% {background: linear-gradient(405deg, #f4d03f 0%, #16a085 100%)}
+   88.89% {background: linear-gradient(410deg, #f4d03f 0%, #16a085 100%)}
+   90.28% {background: linear-gradient(415deg, #f4d03f 0%, #16a085 100%)}
+   91.67% {background: linear-gradient(420deg, #f4d03f 0%, #16a085 100%)}
+   93.06% {background: linear-gradient(425deg, #f4d03f 0%, #16a085 100%)}
+   94.44% {background: linear-gradient(430deg, #f4d03f 0%, #16a085 100%)}
+   95.83% {background: linear-gradient(435deg, #f4d03f 0%, #16a085 100%)}
+   97.22% {background: linear-gradient(440deg, #f4d03f 0%, #16a085 100%)}
+   98.61% {background: linear-gradient(445deg, #f4d03f 0%, #16a085 100%)}
+   100% {background: linear-gradient(450deg, #f4d03f 0%, #16a085 100%)}
+}
+
+@-moz-keyframes btnTalleresCebrero {
+   0% {background: linear-gradient(90deg, #f4d03f 0%, #16a085 100%)}
+   1.39% {background: linear-gradient(95deg, #f4d03f 0%, #16a085 100%)}
+   2.78% {background: linear-gradient(100deg, #f4d03f 0%, #16a085 100%)}
+   4.17% {background: linear-gradient(105deg, #f4d03f 0%, #16a085 100%)}
+   5.56% {background: linear-gradient(110deg, #f4d03f 0%, #16a085 100%)}
+   6.94% {background: linear-gradient(115deg, #f4d03f 0%, #16a085 100%)}
+   8.33% {background: linear-gradient(120deg, #f4d03f 0%, #16a085 100%)}
+   9.72% {background: linear-gradient(125deg, #f4d03f 0%, #16a085 100%)}
+   11.11% {background: linear-gradient(130deg, #f4d03f 0%, #16a085 100%)}
+   12.5% {background: linear-gradient(135deg, #f4d03f 0%, #16a085 100%)}
+   13.89% {background: linear-gradient(140deg, #f4d03f 0%, #16a085 100%)}
+   15.28% {background: linear-gradient(145deg, #f4d03f 0%, #16a085 100%)}
+   16.67% {background: linear-gradient(150deg, #f4d03f 0%, #16a085 100%)}
+   18.06% {background: linear-gradient(155deg, #f4d03f 0%, #16a085 100%)}
+   19.44% {background: linear-gradient(160deg, #f4d03f 0%, #16a085 100%)}
+   20.83% {background: linear-gradient(165deg, #f4d03f 0%, #16a085 100%)}
+   22.22% {background: linear-gradient(170deg, #f4d03f 0%, #16a085 100%)}
+   23.61% {background: linear-gradient(175deg, #f4d03f 0%, #16a085 100%)}
+   25% {background: linear-gradient(180deg, #f4d03f 0%, #16a085 100%)}
+   26.39% {background: linear-gradient(185deg, #f4d03f 0%, #16a085 100%)}
+   27.78% {background: linear-gradient(190deg, #f4d03f 0%, #16a085 100%)}
+   29.17% {background: linear-gradient(195deg, #f4d03f 0%, #16a085 100%)}
+   30.56% {background: linear-gradient(200deg, #f4d03f 0%, #16a085 100%)}
+   31.94% {background: linear-gradient(205deg, #f4d03f 0%, #16a085 100%)}
+   33.33% {background: linear-gradient(210deg, #f4d03f 0%, #16a085 100%)}
+   34.72% {background: linear-gradient(215deg, #f4d03f 0%, #16a085 100%)}
+   36.11% {background: linear-gradient(220deg, #f4d03f 0%, #16a085 100%)}
+   37.5% {background: linear-gradient(225deg, #f4d03f 0%, #16a085 100%)}
+   38.89% {background: linear-gradient(230deg, #f4d03f 0%, #16a085 100%)}
+   40.28% {background: linear-gradient(235deg, #f4d03f 0%, #16a085 100%)}
+   41.67% {background: linear-gradient(240deg, #f4d03f 0%, #16a085 100%)}
+   43.06% {background: linear-gradient(245deg, #f4d03f 0%, #16a085 100%)}
+   44.44% {background: linear-gradient(250deg, #f4d03f 0%, #16a085 100%)}
+   45.83% {background: linear-gradient(255deg, #f4d03f 0%, #16a085 100%)}
+   47.22% {background: linear-gradient(260deg, #f4d03f 0%, #16a085 100%)}
+   48.61% {background: linear-gradient(265deg, #f4d03f 0%, #16a085 100%)}
+   50% {background: linear-gradient(270deg, #f4d03f 0%, #16a085 100%)}
+   51.39% {background: linear-gradient(275deg, #f4d03f 0%, #16a085 100%)}
+   52.78% {background: linear-gradient(280deg, #f4d03f 0%, #16a085 100%)}
+   54.17% {background: linear-gradient(285deg, #f4d03f 0%, #16a085 100%)}
+   55.56% {background: linear-gradient(290deg, #f4d03f 0%, #16a085 100%)}
+   56.94% {background: linear-gradient(295deg, #f4d03f 0%, #16a085 100%)}
+   58.33% {background: linear-gradient(300deg, #f4d03f 0%, #16a085 100%)}
+   59.72% {background: linear-gradient(305deg, #f4d03f 0%, #16a085 100%)}
+   61.11% {background: linear-gradient(310deg, #f4d03f 0%, #16a085 100%)}
+   62.5% {background: linear-gradient(315deg, #f4d03f 0%, #16a085 100%)}
+   63.89% {background: linear-gradient(320deg, #f4d03f 0%, #16a085 100%)}
+   65.28% {background: linear-gradient(325deg, #f4d03f 0%, #16a085 100%)}
+   66.67% {background: linear-gradient(330deg, #f4d03f 0%, #16a085 100%)}
+   68.06% {background: linear-gradient(335deg, #f4d03f 0%, #16a085 100%)}
+   69.44% {background: linear-gradient(340deg, #f4d03f 0%, #16a085 100%)}
+   70.83% {background: linear-gradient(345deg, #f4d03f 0%, #16a085 100%)}
+   72.22% {background: linear-gradient(350deg, #f4d03f 0%, #16a085 100%)}
+   73.61% {background: linear-gradient(355deg, #f4d03f 0%, #16a085 100%)}
+   75% {background: linear-gradient(360deg, #f4d03f 0%, #16a085 100%)}
+   76.39% {background: linear-gradient(365deg, #f4d03f 0%, #16a085 100%)}
+   77.78% {background: linear-gradient(370deg, #f4d03f 0%, #16a085 100%)}
+   79.17% {background: linear-gradient(375deg, #f4d03f 0%, #16a085 100%)}
+   80.56% {background: linear-gradient(380deg, #f4d03f 0%, #16a085 100%)}
+   81.94% {background: linear-gradient(385deg, #f4d03f 0%, #16a085 100%)}
+   83.33% {background: linear-gradient(390deg, #f4d03f 0%, #16a085 100%)}
+   84.72% {background: linear-gradient(395deg, #f4d03f 0%, #16a085 100%)}
+   86.11% {background: linear-gradient(400deg, #f4d03f 0%, #16a085 100%)}
+   87.5% {background: linear-gradient(405deg, #f4d03f 0%, #16a085 100%)}
+   88.89% {background: linear-gradient(410deg, #f4d03f 0%, #16a085 100%)}
+   90.28% {background: linear-gradient(415deg, #f4d03f 0%, #16a085 100%)}
+   91.67% {background: linear-gradient(420deg, #f4d03f 0%, #16a085 100%)}
+   93.06% {background: linear-gradient(425deg, #f4d03f 0%, #16a085 100%)}
+   94.44% {background: linear-gradient(430deg, #f4d03f 0%, #16a085 100%)}
+   95.83% {background: linear-gradient(435deg, #f4d03f 0%, #16a085 100%)}
+   97.22% {background: linear-gradient(440deg, #f4d03f 0%, #16a085 100%)}
+   98.61% {background: linear-gradient(445deg, #f4d03f 0%, #16a085 100%)}
+   100% {background: linear-gradient(450deg, #f4d03f 0%, #16a085 100%)}
+}
+
+@keyframes btnTalleresCebrero {
+   0% {background: linear-gradient(90deg, #f4d03f 0%, #16a085 100%)}
+   1.39% {background: linear-gradient(95deg, #f4d03f 0%, #16a085 100%)}
+   2.78% {background: linear-gradient(100deg, #f4d03f 0%, #16a085 100%)}
+   4.17% {background: linear-gradient(105deg, #f4d03f 0%, #16a085 100%)}
+   5.56% {background: linear-gradient(110deg, #f4d03f 0%, #16a085 100%)}
+   6.94% {background: linear-gradient(115deg, #f4d03f 0%, #16a085 100%)}
+   8.33% {background: linear-gradient(120deg, #f4d03f 0%, #16a085 100%)}
+   9.72% {background: linear-gradient(125deg, #f4d03f 0%, #16a085 100%)}
+   11.11% {background: linear-gradient(130deg, #f4d03f 0%, #16a085 100%)}
+   12.5% {background: linear-gradient(135deg, #f4d03f 0%, #16a085 100%)}
+   13.89% {background: linear-gradient(140deg, #f4d03f 0%, #16a085 100%)}
+   15.28% {background: linear-gradient(145deg, #f4d03f 0%, #16a085 100%)}
+   16.67% {background: linear-gradient(150deg, #f4d03f 0%, #16a085 100%)}
+   18.06% {background: linear-gradient(155deg, #f4d03f 0%, #16a085 100%)}
+   19.44% {background: linear-gradient(160deg, #f4d03f 0%, #16a085 100%)}
+   20.83% {background: linear-gradient(165deg, #f4d03f 0%, #16a085 100%)}
+   22.22% {background: linear-gradient(170deg, #f4d03f 0%, #16a085 100%)}
+   23.61% {background: linear-gradient(175deg, #f4d03f 0%, #16a085 100%)}
+   25% {background: linear-gradient(180deg, #f4d03f 0%, #16a085 100%)}
+   26.39% {background: linear-gradient(185deg, #f4d03f 0%, #16a085 100%)}
+   27.78% {background: linear-gradient(190deg, #f4d03f 0%, #16a085 100%)}
+   29.17% {background: linear-gradient(195deg, #f4d03f 0%, #16a085 100%)}
+   30.56% {background: linear-gradient(200deg, #f4d03f 0%, #16a085 100%)}
+   31.94% {background: linear-gradient(205deg, #f4d03f 0%, #16a085 100%)}
+   33.33% {background: linear-gradient(210deg, #f4d03f 0%, #16a085 100%)}
+   34.72% {background: linear-gradient(215deg, #f4d03f 0%, #16a085 100%)}
+   36.11% {background: linear-gradient(220deg, #f4d03f 0%, #16a085 100%)}
+   37.5% {background: linear-gradient(225deg, #f4d03f 0%, #16a085 100%)}
+   38.89% {background: linear-gradient(230deg, #f4d03f 0%, #16a085 100%)}
+   40.28% {background: linear-gradient(235deg, #f4d03f 0%, #16a085 100%)}
+   41.67% {background: linear-gradient(240deg, #f4d03f 0%, #16a085 100%)}
+   43.06% {background: linear-gradient(245deg, #f4d03f 0%, #16a085 100%)}
+   44.44% {background: linear-gradient(250deg, #f4d03f 0%, #16a085 100%)}
+   45.83% {background: linear-gradient(255deg, #f4d03f 0%, #16a085 100%)}
+   47.22% {background: linear-gradient(260deg, #f4d03f 0%, #16a085 100%)}
+   48.61% {background: linear-gradient(265deg, #f4d03f 0%, #16a085 100%)}
+   50% {background: linear-gradient(270deg, #f4d03f 0%, #16a085 100%)}
+   51.39% {background: linear-gradient(275deg, #f4d03f 0%, #16a085 100%)}
+   52.78% {background: linear-gradient(280deg, #f4d03f 0%, #16a085 100%)}
+   54.17% {background: linear-gradient(285deg, #f4d03f 0%, #16a085 100%)}
+   55.56% {background: linear-gradient(290deg, #f4d03f 0%, #16a085 100%)}
+   56.94% {background: linear-gradient(295deg, #f4d03f 0%, #16a085 100%)}
+   58.33% {background: linear-gradient(300deg, #f4d03f 0%, #16a085 100%)}
+   59.72% {background: linear-gradient(305deg, #f4d03f 0%, #16a085 100%)}
+   61.11% {background: linear-gradient(310deg, #f4d03f 0%, #16a085 100%)}
+   62.5% {background: linear-gradient(315deg, #f4d03f 0%, #16a085 100%)}
+   63.89% {background: linear-gradient(320deg, #f4d03f 0%, #16a085 100%)}
+   65.28% {background: linear-gradient(325deg, #f4d03f 0%, #16a085 100%)}
+   66.67% {background: linear-gradient(330deg, #f4d03f 0%, #16a085 100%)}
+   68.06% {background: linear-gradient(335deg, #f4d03f 0%, #16a085 100%)}
+   69.44% {background: linear-gradient(340deg, #f4d03f 0%, #16a085 100%)}
+   70.83% {background: linear-gradient(345deg, #f4d03f 0%, #16a085 100%)}
+   72.22% {background: linear-gradient(350deg, #f4d03f 0%, #16a085 100%)}
+   73.61% {background: linear-gradient(355deg, #f4d03f 0%, #16a085 100%)}
+   75% {background: linear-gradient(360deg, #f4d03f 0%, #16a085 100%)}
+   76.39% {background: linear-gradient(365deg, #f4d03f 0%, #16a085 100%)}
+   77.78% {background: linear-gradient(370deg, #f4d03f 0%, #16a085 100%)}
+   79.17% {background: linear-gradient(375deg, #f4d03f 0%, #16a085 100%)}
+   80.56% {background: linear-gradient(380deg, #f4d03f 0%, #16a085 100%)}
+   81.94% {background: linear-gradient(385deg, #f4d03f 0%, #16a085 100%)}
+   83.33% {background: linear-gradient(390deg, #f4d03f 0%, #16a085 100%)}
+   84.72% {background: linear-gradient(395deg, #f4d03f 0%, #16a085 100%)}
+   86.11% {background: linear-gradient(400deg, #f4d03f 0%, #16a085 100%)}
+   87.5% {background: linear-gradient(405deg, #f4d03f 0%, #16a085 100%)}
+   88.89% {background: linear-gradient(410deg, #f4d03f 0%, #16a085 100%)}
+   90.28% {background: linear-gradient(415deg, #f4d03f 0%, #16a085 100%)}
+   91.67% {background: linear-gradient(420deg, #f4d03f 0%, #16a085 100%)}
+   93.06% {background: linear-gradient(425deg, #f4d03f 0%, #16a085 100%)}
+   94.44% {background: linear-gradient(430deg, #f4d03f 0%, #16a085 100%)}
+   95.83% {background: linear-gradient(435deg, #f4d03f 0%, #16a085 100%)}
+   97.22% {background: linear-gradient(440deg, #f4d03f 0%, #16a085 100%)}
+   98.61% {background: linear-gradient(445deg, #f4d03f 0%, #16a085 100%)}
+   100% {background: linear-gradient(450deg, #f4d03f 0%, #16a085 100%)}
+}
+
+.contact-data {
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 25px;
+}
+
+.unselectable {
+   user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+}
