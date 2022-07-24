@@ -209,6 +209,7 @@ table.calendar {
    text-transform: uppercase;
    transition: 0.7s;
    width: 120px;
+   border: solid 3px white;
 
    -webkit-animation: btnTalleresCebrero 2s ease infinite;
    -moz-animation: btnTalleresCebrero 2s ease infinite;
@@ -456,4 +457,12 @@ table.calendar {
    -khtml-user-select: none;
    -webkit-user-select: none;
    -o-user-select: none;
+}
+
+.info {
+   background-color: black;
+   border: solid 3px yellow;
+   padding: 10px;
+   margin: 0 20px 0 20px;
+   border-radius: 10px;
 }

@@ -78,6 +78,14 @@
 
                   <div style="height: 25px;"></div>
 
+                  <div class="info">
+                     Mecánica<br />
+                     Ruedas y neumáticos<br />
+                     Climatización
+                  </div>
+
+                  <div style="height: 25px;"></div>
+
                   <!--
 
                   <div><img src="images/seat600-w250.png" alt="Talleres Cebrero" width="250" /></div>
