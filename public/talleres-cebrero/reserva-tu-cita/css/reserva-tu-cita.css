@@ -71,7 +71,7 @@ table.calendar {
 }
 
 .calendar .saturday {
-   border-left: solid 2px red;
+   border-left: solid 2px yellow;
 }
 
 .calendar .weekendday {
