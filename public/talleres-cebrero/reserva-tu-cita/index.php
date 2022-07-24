@@ -105,6 +105,10 @@
                      <a class="here" target="_blank" href="https://wa.me/34689510841"><img align="absmiddle" src="images/icons/whatsapp-w20.png" alt="WhatsApp" width="20" /></a>
                      &nbsp;
                      <a class="here" target="_blank" href="https://wa.me/34689510841">689 51 08 41</a>
+                     <br />
+                     <a class="here" target="_blank" href="tel:957751738"><img align="absmiddle" src="images/icons/phone-w20.png" alt="Phone" width="20" /></a>
+                     &nbsp;
+                     <a class="here" target="_blank" href="tel:957751738">957 75 17 38</a>
                   </div>
 
                </td>
