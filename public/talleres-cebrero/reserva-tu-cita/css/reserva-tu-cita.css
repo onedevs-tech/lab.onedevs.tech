@@ -54,7 +54,7 @@ table.calendar {
    padding: 5px;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
-   border: solid 2px red;
+   border: solid 2px yellow;
 }
 
 .calendar .weekday {
