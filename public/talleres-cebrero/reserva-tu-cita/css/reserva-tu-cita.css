@@ -105,6 +105,15 @@ table.calendar {
    border-radius: 10px;
 }
 
+span.activeday {
+   background-color: white;
+   border-radius: 10px;
+   color: black;
+   padding-left: 5px;
+   padding-right: 5px;
+   font-weight: bold;
+}
+
 .calendar td.activeday a {
    color: black;
    text-decoration: none;

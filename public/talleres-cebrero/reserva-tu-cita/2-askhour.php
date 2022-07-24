@@ -127,7 +127,7 @@
                   </div>
 
                   <div class="instructions">
-                     En el cuadro de abajo, selecciona la hora en la que estarás en el taller
+                     En el cuadro de abajo, selecciona la <span class="activeday">hora</span> en la que estarás en el taller
                   </div>
 
                   <div style="height: 25px;"></div>

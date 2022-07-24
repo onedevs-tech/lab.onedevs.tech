@@ -117,7 +117,7 @@
                   <div style="height: 25px;"></div>
 
                   <div class="instructions">
-                     En el calendario de abajo, selecciona el día en que quieres traernos el vehículo
+                     En el calendario de abajo, selecciona el <span class="activeday">día</span> en que quieres traernos el vehículo
                   </div>
 
                   <div style="height: 25px;"></div>
