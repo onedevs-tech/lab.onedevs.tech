@@ -187,6 +187,7 @@
                               if ($dia_semana === 'S') {
                                  $clases .= ' saturday';
                               }
+
                               if (\in_array($dia_bucle, $dias_vacation)) {
                                  $clases .= ' vacations';
                               }

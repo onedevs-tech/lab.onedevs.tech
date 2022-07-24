@@ -83,8 +83,12 @@ table.calendar {
    font-size: 14px;
 }
 
-.calendar .currentmonth {
-   background-color: #16a085 !important;
+.calendar .currentmonth, .calendar .currentmonth.vacations {
+   background-color: #16a085;
+}
+
+.calendar .currentmonth.pastday {
+   background-color: #068065;
 }
 
 .calendar td.activeday {
