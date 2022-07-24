@@ -80,7 +80,7 @@
 
                   <div class="info">
                      Mecánica<br />
-                     Ruedas y neumáticos<br />
+                     Ruedas y Neumáticos<br />
                      Climatización
                   </div>
 
