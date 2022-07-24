@@ -91,7 +91,7 @@ table.calendar {
 }
 
 .calendar .futuremonth {
-   background-color: #16c5f0;
+   background-color: #686215;
 }
 
 .calendar td.activeday {
@@ -152,7 +152,7 @@ span.activeday {
 }
 
 .calendar .vacations.futuremonth {
-   background-color: #16c5f0;
+   background-color: #686215;
 }
 
 .calendar .pastday {
