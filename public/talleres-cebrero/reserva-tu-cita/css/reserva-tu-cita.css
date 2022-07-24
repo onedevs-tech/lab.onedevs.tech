@@ -44,6 +44,10 @@ table.calendar {
    margin: 0 auto;
 }
 
+.calendar td {
+   background-color: #068065;
+}
+
 .calendar .month {
    background-color: #16a085;
    font-weight: bold;
@@ -79,11 +83,14 @@ table.calendar {
    font-size: 14px;
 }
 
+.calendar .currentmonth {
+   background-color: #16a085 !important;
+}
+
 .calendar td.activeday {
    font-weight: bold;
    padding: 5px;
    font-size: 14px;
-   background-color: #068065;
 }
 
 .calendar div.activeday {
@@ -94,6 +101,18 @@ table.calendar {
 .calendar td.activeday a {
    color: black;
    text-decoration: none;
+}
+
+.calendar td.currentday {
+   font-weight: bold;
+   padding: 5px;
+   font-size: 14px;
+}
+
+.calendar div.currentday {
+   background-color: yellow;
+   color: black;
+   border-radius: 10px;
 }
 
 .calendar .vacations {
@@ -466,3 +485,4 @@ table.calendar {
    margin: 0 20px 0 20px;
    border-radius: 100px;
 }
+

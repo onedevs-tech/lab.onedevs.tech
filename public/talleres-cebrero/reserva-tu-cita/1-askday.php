@@ -5,6 +5,45 @@
 
    $css_version = \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9);
 
+   $meses = [
+       1 => 'Ene',
+       2 => 'Feb',
+       3 => 'Marz',
+       4 => 'Abr',
+       5 => 'May',
+       6 => 'Jun',
+       7 => 'Jul',
+       8 => 'Ago',
+       9 => 'Sep',
+      10 => 'Oct',
+      11 => 'Nov',
+      12 => 'Dic'
+   ];
+
+   $time_ahora = \time();
+   $hoy = \date('Ymd', $time_ahora);
+   $mes_actual = (int)\substr($hoy, 4, 2);
+   $nombre_mes_actual = $meses[$mes_actual];
+   $mes_sig = $mes_actual + 1;
+      if ($mes_sig == 13) $mes_sig = 1;
+   $nombre_mes_sig = $meses[$mes_sig];
+   $mes_sig_sig = $mes_actual + 2;
+      if ($mes_sig_sig == 13) $mes_sig_sig = 1;
+      if ($mes_sig_sig == 14) $mes_sig_sig = 2;
+   $nombre_mes_sig_sig = $meses[$mes_sig_sig];
+   $mes_anterior = $mes_actual - 1; if ($mes_anterior == 0) $mes_anterior = 12;
+   $año_actual = (int)\substr($hoy, 0, 4);
+   $dia_actual = (int)\substr($hoy, 6, 2);
+   $time_dia_actual = \mktime(0, 0, 0, $mes_actual-1, $dia_actual, $año_actual);
+
+   $dias_vacation = [
+      '20220815',
+      '20220816',
+      '20220817',
+      '20220818',
+      '20220819'
+   ];
+
 ?>
 
 <!-- ASK DAY -->
@@ -87,7 +126,7 @@
                      <table class="calendar" cellpadding="0" cellspacing="0">
                         <thead>
                            <tr>
-                              <td colspan="7" class="month">Julio - Agosto 2022</td>
+                              <td colspan="7" class="month"><?= $nombre_mes_actual ?> - <?= $nombre_mes_sig ?> - <?= $nombre_mes_sig_sig ?> - <?= $año_actual ?></td>
                            </tr>
                            <tr>
                               <td class="weekday">L</td>
@@ -100,96 +139,86 @@
                            </tr>
                         </thead>
                         <tbody>
-                           <tr>
-                              <td class="pastday"></td>
-                              <td class="pastday"></td>
-                              <td class="pastday"></td>
-                              <td class="pastday"></td>
-                              <td class="pastday">1</td>
-                              <td class="weekendday saturday">2</td>
-                              <td class="weekendday">3</td>
-                           </tr>
-                           <tr>
-                              <td class="pastday">4</td>
-                              <td class="pastday">5</td>
-                              <td class="pastday">6</td>
-                              <td class="pastday">7</td>
-                              <td class="pastday">8</td>
-                              <td class="weekendday saturday">9</td>
-                              <td class="weekendday">10</td>
-                           </tr>
-                           <tr>
-                              <td class="pastday">11</td>
-                              <td class="pastday">12</td>
-                              <td class="pastday">13</td>
-                              <td class="pastday">14</td>
-                              <td class="pastday">15</td>
-                              <td class="weekendday saturday">16</td>
-                              <td class="weekendday">17</td>
-                           </tr>
-                           <tr>
-                              <td class="pastday">18</td>
-                              <td class="pastday">19</td>
-                              <td class="pastday">20</td>
-                              <td class="pastday">21</td>
-                              <td class="pastday">22</td>
-                              <td class="weekendday saturday">23</td>
-                              <td class="weekendday">24</td>
-                           </tr>
-                           <tr>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220725">25</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220726">26</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220727">27</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220728">28</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220729">29</a></div></td>
-                              <td class="weekendday saturday">30</td>
-                              <td class="weekendday">31</td>
-                           </tr>
-                           <tr>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220801">1</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220802">2</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220803">3</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220804">4</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220805">5</a></div></td>
-                              <td class="weekendday saturday">6</td>
-                              <td class="weekendday">7</td>
-                           </tr>
-                           <tr>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220808">8</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220809">9</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220810">10</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220811">11</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220812">12</a></div></td>
-                              <td class="weekendday saturday">13</td>
-                              <td class="weekendday">14</td>
-                           </tr>
-                           <tr>
-                              <td class="vacations">15</td>
-                              <td class="vacations">16</td>
-                              <td class="vacations">17</td>
-                              <td class="vacations">18</td>
-                              <td class="vacations">19</td>
-                              <td class="weekendday saturday">20</td>
-                              <td class="weekendday">21</td>
-                           </tr>
-                           <tr>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220822">22</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220823">23</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220824">24</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220825">25</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220826">26</a></div></td>
-                              <td class="weekendday saturday">27</td>
-                              <td class="weekendday">28</td>
-                           </tr>
-                           <tr>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220829">29</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220830">30</a></div></td>
-                              <td class="activeday"><div class="activeday"><a href="2-askhour.php?day=20220831">31</a></div></td>
-                              <td class="activeday"></td>
-                              <td class="activeday"></td>
-                              <td class="weekendday saturday"></td>
-                              <td class="weekendday"></td>
-                           </tr>
+
+                           <?php
+
+                              $time_1er_dia_mes_actual = \mktime(0, 0, 0, $mes_actual, 1, $año_actual);
+                              $dia_semana_1er_dia_mes_actual = ['D', 'L', 'M', 'X', 'J', 'V', 'S'][\date('w', $time_1er_dia_mes_actual)];
+                              $resto = ((int)\date('N', $time_1er_dia_mes_actual) - 1) * 86400;
+                              $time_1er_dia_loop = $time_1er_dia_mes_actual - $resto;
+
+                              $time_dia_bucle = $time_1er_dia_loop;
+
+                              $weeks_echoed = 0;
+                           ?>
+
+                           <?php while ($weeks_echoed < 12) : ?>
+
+                           <?php
+
+                              $dia_semana = ['D', 'L', 'M', 'X', 'J', 'V', 'S'][(int)\date('w', $time_dia_bucle)];
+
+                              if ($dia_semana === 'L') {
+                                 echo '<tr>';
+                              }
+
+                              $clases = '';
+
+                              $dia_bucle = (int)\date('Ymd', $time_dia_bucle);
+
+                              $mes_bucle = (int)\date('m', $time_dia_bucle);
+
+                              if ($mes_bucle === $mes_actual) {
+                                 $clases .= ' currentmonth';
+                              }
+
+                              if ($dia_bucle < (int)$hoy) {
+                                 $clases .= ' pastday';
+                              } elseif ($dia_bucle === (int)$hoy) {
+                                 $clases .= ' currentday';
+                              } else {
+                                 if ($dia_semana != 'S' && $dia_semana != 'D') {
+                                    $clases .= ' activeday';
+                                 }
+                              }
+                              if ($dia_semana === 'S' || $dia_semana == 'D') {
+                                 $clases .= ' weekendday';
+                              }
+                              if ($dia_semana === 'S') {
+                                 $clases .= ' saturday';
+                              }
+                              if (\in_array($dia_bucle, $dias_vacation)) {
+                                 $clases .= ' vacations';
+                              }
+
+                              $dia_mes = (int)\substr((string)$dia_bucle, 6, 2);
+
+                              if ($dia_bucle < (int)$hoy) {
+                                 $content = $dia_mes;
+                              }
+                              elseif ($dia_bucle === (int)$hoy) {
+                                 $content = '<div class="currentday">' . $dia_mes . '</div>';
+                              } else {
+                                 if ($dia_semana === 'S' || $dia_semana == 'D' || \in_array($dia_bucle, $dias_vacation)) {
+                                    $content = $dia_mes;
+                                 } else {
+                                    $content = '<div class="activeday"><a href="2-askhour.php?day=' . $dia_bucle . '">' . $dia_mes . '</a></div>';
+                                 }
+                              }
+
+                              echo '<td class="' . $clases . '">' . $content . '</td>';
+
+                              if ($dia_semana === 'D') {
+                                 echo '</tr>';
+                                 $weeks_echoed++;
+                              }
+
+                              $time_dia_bucle = $time_dia_bucle + 86400;
+
+                           ?>
+
+                           <?php endwhile; ?>
+
                         </tbody>
                      </table>
                   </div>
