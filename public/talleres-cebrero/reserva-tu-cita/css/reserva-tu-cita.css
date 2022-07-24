@@ -54,7 +54,7 @@ table.calendar {
    padding: 5px;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
-   border: solid 1px white;
+   border: solid 2px red;
 }
 
 .calendar .weekday {
@@ -71,7 +71,7 @@ table.calendar {
 }
 
 .calendar .saturday {
-   border-left: solid 1px white;
+   border-left: solid 2px red;
 }
 
 .calendar .weekendday {
