@@ -48,31 +48,30 @@ table.calendar {
    background-color: #068065;
 }
 
-.calendar .month {
-   background-color: #16a085;
+.calendar .header {
+   background-color: black;
    font-weight: bold;
    padding: 5px;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
+   border: solid 1px white;
 }
 
 .calendar .weekday {
    background-color: #16a085;
    font-weight: bold;
    padding: 5px;
-   border-bottom: solid 1px #16a085;
 }
 
 .calendar .weekenddayname {
-   background-color: #068065;
+   background-color: #16a085;
    font-weight: bold;
    padding: 5px;
    color: black;
-   border-bottom: solid 1px black;
 }
 
 .calendar .saturday {
-   border-left: solid 1px black;
+   border-left: solid 1px white;
 }
 
 .calendar .weekendday {
@@ -83,12 +82,16 @@ table.calendar {
    font-size: 14px;
 }
 
-.calendar .currentmonth, .calendar .currentmonth.vacations {
+.calendar .currentmonth {
    background-color: #16a085;
 }
 
 .calendar .currentmonth.pastday {
    background-color: #068065;
+}
+
+.calendar .futuremonth {
+   background-color: #16c5f0;
 }
 
 .calendar td.activeday {
@@ -125,6 +128,22 @@ table.calendar {
    padding: 5px;
    color: black;
    font-size: 14px;
+}
+
+.calendar .vacations.pastday {
+   background-color: #068065;
+}
+
+.calendar .vacations.currentmonth.pastday {
+   background-color: #068065;
+}
+
+.calendar .vacations.currentmonth {
+   background-color: #16a085;
+}
+
+.calendar .vacations.futuremonth {
+   background-color: #16c5f0;
 }
 
 .calendar .pastday {

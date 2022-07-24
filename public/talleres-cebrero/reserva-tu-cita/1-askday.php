@@ -126,7 +126,7 @@
                      <table class="calendar" cellpadding="0" cellspacing="0">
                         <thead>
                            <tr>
-                              <td colspan="7" class="month"><?= $nombre_mes_actual ?> - <?= $nombre_mes_sig ?> - <?= $nombre_mes_sig_sig ?> - <?= $año_actual ?></td>
+                              <td colspan="7" class="header"><?= $nombre_mes_actual ?> - <?= $nombre_mes_sig ?> - <?= $nombre_mes_sig_sig ?> - <?= $año_actual ?></td>
                            </tr>
                            <tr>
                               <td class="weekday">L</td>
@@ -170,6 +170,8 @@
 
                               if ($mes_bucle === $mes_actual) {
                                  $clases .= ' currentmonth';
+                              } elseif ($mes_bucle > $mes_actual) {
+                                 $clases .= ' futuremonth';
                               }
 
                               if ($dia_bucle < (int)$hoy) {

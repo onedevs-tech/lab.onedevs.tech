@@ -136,7 +136,7 @@
                      <table class="calendar" cellpadding="0" cellspacing="0">
                         <thead>
                            <tr>
-                              <td colspan="4" class="month"><?= $date_fmt ?></td>
+                              <td colspan="4" class="header"><?= $date_fmt ?></td>
                            </tr>
                         </thead>
                         <tbody>

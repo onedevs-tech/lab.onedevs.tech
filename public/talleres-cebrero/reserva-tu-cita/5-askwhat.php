@@ -83,7 +83,7 @@
                      <table class="calendar" cellpadding="0" cellspacing="0">
                         <thead>
                            <tr>
-                              <td class="month meeting"><?= $_SESSION['meeting'] ?></td>
+                              <td class="header meeting"><?= $_SESSION['meeting'] ?></td>
                            </tr>
                         </thead>
                         <tbody>
