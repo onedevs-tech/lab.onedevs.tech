@@ -18,11 +18,21 @@
    $file = '/var/www/lab.onedevs.tech/files/citas.txt';
    \file_put_contents($file, $line, \FILE_APPEND | \LOCK_EX);
 
+   // mandamos mail
+
+   $from = "info@onedevs.tech";
+   $to = "richiruizmartinez@gmail.com";
+   $body = $line;
+   $subject = 'Talleres Cebrero - nueva cita';
+   $command = "echo \"{$body}\" | /usr/bin/mail --append=\"FROM:{$from}\" -s \"{$subject}\" {$to}";
+   \system($command);
+
+
    $css_version = \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9) . \rand(0, 9);
 
 ?>
 
-<!-- HOUR -->
+<!-- DONE -->
 
 <!DOCTYPE html>
 

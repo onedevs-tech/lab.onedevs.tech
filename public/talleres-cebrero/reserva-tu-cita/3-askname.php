@@ -12,7 +12,7 @@
 
 ?>
 
-<!-- GET NAME -->
+<!-- ASK NAME -->
 
 <!DOCTYPE html>
 

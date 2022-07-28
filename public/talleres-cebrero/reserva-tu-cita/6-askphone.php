@@ -9,7 +9,7 @@
 
 ?>
 
-<!-- BRAND -->
+<!-- ASK PHONE -->
 
 <!DOCTYPE html>
 

@@ -51,7 +51,7 @@
 
 ?>
 
-<!-- GET HOUR -->
+<!-- ASK HOUR -->
 
 <!DOCTYPE html>
 

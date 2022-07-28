@@ -9,7 +9,7 @@
 
 ?>
 
-<!-- BRAND -->
+<!-- ASK BRAND -->
 
 <!DOCTYPE html>
 
