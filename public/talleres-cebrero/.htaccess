@@ -1,0 +1,4 @@
+AuthName "Talleres Cebrero"
+AuthType Basic
+AuthUserFile /var/www/lab.onedevs.tech/.htpasswd
+Require valid-user
